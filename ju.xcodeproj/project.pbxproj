@@ -7,13 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A7F84681C8F2DC600B3985A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A7F84661C8F2DC600B3985A /* Main.storyboard */; };
+		0AB9B0B81C8489AC0093EFB5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB9B0B71C8489AC0093EFB5 /* SystemConfiguration.framework */; };
+		0AB9B0BA1C8489CC0093EFB5 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB9B0B91C8489CC0093EFB5 /* libz.tbd */; };
+		0AB9B0BC1C8489E40093EFB5 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB9B0BB1C8489E40093EFB5 /* libsqlite3.0.tbd */; };
+		0AB9B0BE1C8489FE0093EFB5 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB9B0BD1C8489FE0093EFB5 /* libc++.tbd */; };
+		0AB9B0C01C848B0B0093EFB5 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB9B0BF1C848B0B0093EFB5 /* CoreTelephony.framework */; };
+		0AB9B0C31C88888F0093EFB5 /* MyCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB9B0C21C88888F0093EFB5 /* MyCalendar.swift */; };
 		0AE7EBE81C5BA8B700C0CE4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE7EBE71C5BA8B700C0CE4F /* AppDelegate.swift */; };
-		0AE7EBEA1C5BA8B700C0CE4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE7EBE91C5BA8B700C0CE4F /* ViewController.swift */; };
-		0AE7EBED1C5BA8B700C0CE4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AE7EBEB1C5BA8B700C0CE4F /* Main.storyboard */; };
 		0AE7EBEF1C5BA8B700C0CE4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AE7EBEE1C5BA8B700C0CE4F /* Assets.xcassets */; };
 		0AE7EBF21C5BA8B700C0CE4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AE7EBF01C5BA8B700C0CE4F /* LaunchScreen.storyboard */; };
 		0AE7EBFD1C5BA8B700C0CE4F /* juTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE7EBFC1C5BA8B700C0CE4F /* juTests.swift */; };
 		0AE7EC081C5BA8B700C0CE4F /* juUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE7EC071C5BA8B700C0CE4F /* juUITests.swift */; };
+		0AE7EC1B1C5BB0EF00C0CE4F /* AuthorizedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE7EC1A1C5BB0EF00C0CE4F /* AuthorizedViewController.swift */; };
+		0AFC384A1C74A17B00502ACD /* AddCalendarInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC38491C74A17B00502ACD /* AddCalendarInfoController.swift */; };
+		0AFC384C1C7AA5ED00502ACD /* DetailCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC384B1C7AA5ED00502ACD /* DetailCalendarViewController.swift */; };
+		0AFC38881C7D93BC00502ACD /* CalendarListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC38871C7D93BC00502ACD /* CalendarListViewController.swift */; };
+		0AFC389D1C7DF0D300502ACD /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFC38981C7DF0D300502ACD /* libWeChatSDK.a */; };
+		0AFC389E1C7DF0D300502ACD /* read_me.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0AFC38991C7DF0D300502ACD /* read_me.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +45,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A7F84671C8F2DC600B3985A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0AB9B0B31C8485890093EFB5 /* ju-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ju-Bridging-Header.h"; sourceTree = "<group>"; };
+		0AB9B0B71C8489AC0093EFB5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0AB9B0B91C8489CC0093EFB5 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		0AB9B0BB1C8489E40093EFB5 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		0AB9B0BD1C8489FE0093EFB5 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		0AB9B0BF1C848B0B0093EFB5 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		0AB9B0C21C88888F0093EFB5 /* MyCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCalendar.swift; sourceTree = "<group>"; };
 		0AE7EBE41C5BA8B700C0CE4F /* ju.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ju.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AE7EBE71C5BA8B700C0CE4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0AE7EBE91C5BA8B700C0CE4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0AE7EBEC1C5BA8B700C0CE4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0AE7EBEE1C5BA8B700C0CE4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AE7EBF11C5BA8B700C0CE4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0AE7EBF31C5BA8B700C0CE4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +64,15 @@
 		0AE7EC031C5BA8B700C0CE4F /* juUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = juUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AE7EC071C5BA8B700C0CE4F /* juUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = juUITests.swift; sourceTree = "<group>"; };
 		0AE7EC091C5BA8B700C0CE4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AE7EC1A1C5BB0EF00C0CE4F /* AuthorizedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizedViewController.swift; sourceTree = "<group>"; };
+		0AFC38491C74A17B00502ACD /* AddCalendarInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCalendarInfoController.swift; sourceTree = "<group>"; };
+		0AFC384B1C7AA5ED00502ACD /* DetailCalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCalendarViewController.swift; sourceTree = "<group>"; };
+		0AFC38871C7D93BC00502ACD /* CalendarListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarListViewController.swift; sourceTree = "<group>"; };
+		0AFC38981C7DF0D300502ACD /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		0AFC38991C7DF0D300502ACD /* read_me.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = read_me.txt; sourceTree = "<group>"; };
+		0AFC389A1C7DF0D300502ACD /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		0AFC389B1C7DF0D300502ACD /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		0AFC389C1C7DF0D300502ACD /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +80,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AB9B0C01C848B0B0093EFB5 /* CoreTelephony.framework in Frameworks */,
+				0AB9B0BE1C8489FE0093EFB5 /* libc++.tbd in Frameworks */,
+				0AB9B0BC1C8489E40093EFB5 /* libsqlite3.0.tbd in Frameworks */,
+				0AB9B0BA1C8489CC0093EFB5 /* libz.tbd in Frameworks */,
+				0AB9B0B81C8489AC0093EFB5 /* SystemConfiguration.framework in Frameworks */,
+				0AFC389D1C7DF0D300502ACD /* libWeChatSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,9 +106,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AB9B0C11C848BD70093EFB5 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				0AB9B0B71C8489AC0093EFB5 /* SystemConfiguration.framework */,
+				0AB9B0BF1C848B0B0093EFB5 /* CoreTelephony.framework */,
+				0AB9B0BD1C8489FE0093EFB5 /* libc++.tbd */,
+				0AB9B0BB1C8489E40093EFB5 /* libsqlite3.0.tbd */,
+				0AB9B0B91C8489CC0093EFB5 /* libz.tbd */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
 		0AE7EBDB1C5BA8B700C0CE4F = {
 			isa = PBXGroup;
 			children = (
+				0AB9B0C11C848BD70093EFB5 /* lib */,
 				0AE7EBE61C5BA8B700C0CE4F /* ju */,
 				0AE7EBFB1C5BA8B700C0CE4F /* juTests */,
 				0AE7EC061C5BA8B700C0CE4F /* juUITests */,
@@ -97,11 +142,17 @@
 		0AE7EBE61C5BA8B700C0CE4F /* ju */ = {
 			isa = PBXGroup;
 			children = (
+				0AFC38891C7DEF9F00502ACD /* wechatSDK */,
+				0AE7EC171C5BAA5400C0CE4F /* calendar */,
 				0AE7EBE71C5BA8B700C0CE4F /* AppDelegate.swift */,
-				0AE7EBE91C5BA8B700C0CE4F /* ViewController.swift */,
-				0AE7EBEB1C5BA8B700C0CE4F /* Main.storyboard */,
-				0AE7EBEE1C5BA8B700C0CE4F /* Assets.xcassets */,
+				0AFC38871C7D93BC00502ACD /* CalendarListViewController.swift */,
+				0AFC38491C74A17B00502ACD /* AddCalendarInfoController.swift */,
+				0AFC384B1C7AA5ED00502ACD /* DetailCalendarViewController.swift */,
+				0AE7EC1A1C5BB0EF00C0CE4F /* AuthorizedViewController.swift */,
+				0A7F84661C8F2DC600B3985A /* Main.storyboard */,
 				0AE7EBF01C5BA8B700C0CE4F /* LaunchScreen.storyboard */,
+				0AE7EBEE1C5BA8B700C0CE4F /* Assets.xcassets */,
+				0AB9B0B31C8485890093EFB5 /* ju-Bridging-Header.h */,
 				0AE7EBF31C5BA8B700C0CE4F /* Info.plist */,
 			);
 			path = ju;
@@ -123,6 +174,26 @@
 				0AE7EC091C5BA8B700C0CE4F /* Info.plist */,
 			);
 			path = juUITests;
+			sourceTree = "<group>";
+		};
+		0AE7EC171C5BAA5400C0CE4F /* calendar */ = {
+			isa = PBXGroup;
+			children = (
+				0AB9B0C21C88888F0093EFB5 /* MyCalendar.swift */,
+			);
+			name = calendar;
+			sourceTree = "<group>";
+		};
+		0AFC38891C7DEF9F00502ACD /* wechatSDK */ = {
+			isa = PBXGroup;
+			children = (
+				0AFC38981C7DF0D300502ACD /* libWeChatSDK.a */,
+				0AFC38991C7DF0D300502ACD /* read_me.txt */,
+				0AFC389A1C7DF0D300502ACD /* WechatAuthSDK.h */,
+				0AFC389B1C7DF0D300502ACD /* WXApi.h */,
+				0AFC389C1C7DF0D300502ACD /* WXApiObject.h */,
+			);
+			name = wechatSDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +264,7 @@
 				TargetAttributes = {
 					0AE7EBE31C5BA8B700C0CE4F = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = W5SVX8S5VM;
 					};
 					0AE7EBF71C5BA8B700C0CE4F = {
 						CreatedOnToolsVersion = 7.2;
@@ -231,7 +303,8 @@
 			files = (
 				0AE7EBF21C5BA8B700C0CE4F /* LaunchScreen.storyboard in Resources */,
 				0AE7EBEF1C5BA8B700C0CE4F /* Assets.xcassets in Resources */,
-				0AE7EBED1C5BA8B700C0CE4F /* Main.storyboard in Resources */,
+				0AFC389E1C7DF0D300502ACD /* read_me.txt in Resources */,
+				0A7F84681C8F2DC600B3985A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +329,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AE7EBEA1C5BA8B700C0CE4F /* ViewController.swift in Sources */,
+				0AFC384A1C74A17B00502ACD /* AddCalendarInfoController.swift in Sources */,
+				0AB9B0C31C88888F0093EFB5 /* MyCalendar.swift in Sources */,
 				0AE7EBE81C5BA8B700C0CE4F /* AppDelegate.swift in Sources */,
+				0AFC384C1C7AA5ED00502ACD /* DetailCalendarViewController.swift in Sources */,
+				0AFC38881C7D93BC00502ACD /* CalendarListViewController.swift in Sources */,
+				0AE7EC1B1C5BB0EF00C0CE4F /* AuthorizedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,10 +370,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0AE7EBEB1C5BA8B700C0CE4F /* Main.storyboard */ = {
+		0A7F84661C8F2DC600B3985A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0AE7EBEC1C5BA8B700C0CE4F /* Base */,
+				0A7F84671C8F2DC600B3985A /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -397,10 +474,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ju/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ju",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.niani.ju;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ju/ju-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -408,10 +496,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ju/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ju",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.niani.ju;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ju/ju-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -482,6 +580,7 @@
 				0AE7EC0E1C5BA8B700C0CE4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0AE7EC0F1C5BA8B700C0CE4F /* Build configuration list for PBXNativeTarget "juTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +589,7 @@
 				0AE7EC111C5BA8B700C0CE4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0AE7EC121C5BA8B700C0CE4F /* Build configuration list for PBXNativeTarget "juUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +598,7 @@
 				0AE7EC141C5BA8B700C0CE4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
