@@ -35,6 +35,12 @@ class AddCalendarInfoController: UIViewController, WXApiDelegate {
     }
     
     func done(){
+        for i in self.childViewControllers{
+            if(i.isKindOfClass(AddCalendarTableViewController)){
+                let res = (i as! AddCalendarTableViewController).returnInfo()
+                print(res)
+            }
+        }
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 }

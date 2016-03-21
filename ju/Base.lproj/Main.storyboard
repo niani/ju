@@ -32,7 +32,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZF9-u9-9sq">
                                                     <rect key="frame" x="8" y="11" width="559" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -63,7 +63,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tiA-aP-N5Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1785" y="-1412"/>
+            <point key="canvasLocation" x="1849" y="-1412"/>
         </scene>
         <!--Detail Calendar View Controller-->
         <scene sceneID="qpE-R5-HZZ">
@@ -81,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="onB-c3-8cK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2499" y="-1052"/>
+            <point key="canvasLocation" x="2561" y="-1036"/>
         </scene>
         <!--Add Calendar Info Controller-->
         <scene sceneID="B97-YP-Exv">
@@ -124,12 +124,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Fc-DP-ltt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2499" y="-1857"/>
+            <point key="canvasLocation" x="2561" y="-1873"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Add Calendar Table View Controller-->
         <scene sceneID="W6b-1V-qlJ">
             <objects>
-                <tableViewController id="XUn-Xx-XXx" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="addDeatilView" id="XUn-Xx-XXx" customClass="AddCalendarTableViewController" customModule="ju" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="AtE-yb-8SZ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -147,7 +147,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3I-DZ-iXe">
                                                     <rect key="frame" x="153" y="11" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -159,6 +159,13 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rir-hO-3uX" id="bRe-S6-FaL">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="red-L3-wez">
+                                                    <rect key="frame" x="120" y="5" width="174" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="2ER-68-OZH">
@@ -205,10 +212,14 @@
                             <outlet property="delegate" destination="XUn-Xx-XXx" id="oaQ-Ju-qv9"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="myLabel" destination="Y3I-DZ-iXe" id="CYc-JZ-hfj"/>
+                        <outlet property="myText" destination="red-L3-wez" id="mVg-sk-TIy"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1qg-TD-j4j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3401" y="-1857"/>
+            <point key="canvasLocation" x="3461" y="-1444"/>
         </scene>
         <!--Authorized View Controller-->
         <scene sceneID="EZk-2h-dH7">
@@ -239,7 +250,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Dp-kR-oHy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1785" y="-2170"/>
+            <point key="canvasLocation" x="1093" y="-2154"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ssc-eA-q9A">

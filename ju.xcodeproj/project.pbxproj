@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A4EBA031C9ED5AF00FC84C4 /* AddCalendarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4EBA021C9ED5AF00FC84C4 /* AddCalendarTableViewController.swift */; };
 		0A7F84681C8F2DC600B3985A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A7F84661C8F2DC600B3985A /* Main.storyboard */; };
 		0AB9B0B81C8489AC0093EFB5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB9B0B71C8489AC0093EFB5 /* SystemConfiguration.framework */; };
 		0AB9B0BA1C8489CC0093EFB5 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB9B0B91C8489CC0093EFB5 /* libz.tbd */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A4EBA021C9ED5AF00FC84C4 /* AddCalendarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCalendarTableViewController.swift; sourceTree = "<group>"; };
 		0A7F84671C8F2DC600B3985A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0AB9B0B31C8485890093EFB5 /* ju-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ju-Bridging-Header.h"; sourceTree = "<group>"; };
 		0AB9B0B71C8489AC0093EFB5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -147,6 +149,7 @@
 				0AE7EBE71C5BA8B700C0CE4F /* AppDelegate.swift */,
 				0AFC38871C7D93BC00502ACD /* CalendarListViewController.swift */,
 				0AFC38491C74A17B00502ACD /* AddCalendarInfoController.swift */,
+				0A4EBA021C9ED5AF00FC84C4 /* AddCalendarTableViewController.swift */,
 				0AFC384B1C7AA5ED00502ACD /* DetailCalendarViewController.swift */,
 				0AE7EC1A1C5BB0EF00C0CE4F /* AuthorizedViewController.swift */,
 				0A7F84661C8F2DC600B3985A /* Main.storyboard */,
@@ -333,6 +336,7 @@
 				0AB9B0C31C88888F0093EFB5 /* MyCalendar.swift in Sources */,
 				0AE7EBE81C5BA8B700C0CE4F /* AppDelegate.swift in Sources */,
 				0AFC384C1C7AA5ED00502ACD /* DetailCalendarViewController.swift in Sources */,
+				0A4EBA031C9ED5AF00FC84C4 /* AddCalendarTableViewController.swift in Sources */,
 				0AFC38881C7D93BC00502ACD /* CalendarListViewController.swift in Sources */,
 				0AE7EC1B1C5BB0EF00C0CE4F /* AuthorizedViewController.swift in Sources */,
 			);
