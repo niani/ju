@@ -9,8 +9,8 @@
 import UIKit
 import EventKit
 
-class CalendarListViewController: UIViewController {
-
+class CalendarListViewController: UIViewController{
+    
     @IBOutlet weak var CalendarTableView: UITableView!
     @IBOutlet weak var CalendarTableViewNavigationItem: UINavigationItem!
     
@@ -25,7 +25,7 @@ class CalendarListViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         checkCalendarAuthorizationStatus()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -34,12 +34,21 @@ class CalendarListViewController: UIViewController {
     //init calendarsNavigationBar
     func initCalendarsNavigationBar(){
         CalendarTableViewNavigationItem.title = "事件列表"
+        //创建左边按钮
+        CalendarTableViewNavigationItem.leftBarButtonItem = self.editButtonItem()
         //创建右边按钮
         let rightBtn = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add,
             target: self, action: "addInfo")
         //设置导航项右边的按钮
         CalendarTableViewNavigationItem.setRightBarButtonItem(rightBtn, animated: true)
     }
+    
+    //左侧编辑事件
+    override func setEditing(editing: Bool, animated: Bool) {
+        super.setEditing(!CalendarTableView.editing, animated: animated)
+        CalendarTableView.setEditing(!CalendarTableView.editing, animated: true)
+    }
+    
     //跳转新增
     func addInfo(){
         let mainStoryboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
@@ -96,7 +105,7 @@ class CalendarListViewController: UIViewController {
             //print("开始时间: \(i.startDate)" )
             //print("结束时间: \(i.endDate)" )
             calendarDatas.append(i)
-        }        
+        }
         CalendarTableView.reloadData()
     }
     
@@ -118,15 +127,28 @@ class CalendarListViewController: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
-
+    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        // Return false if you do not want the specified item to be editable.
+        return true
+    }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == .Delete {
+            calendarDatas.removeAtIndex(indexPath.row)
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+        } else if editingStyle == .Insert {
+            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+        }
+    }
+    
     /*
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // Get the new view controller using segue.destinationViewController.
+    // Pass the selected object to the new view controller.
     }
     */
-
+    
 }
